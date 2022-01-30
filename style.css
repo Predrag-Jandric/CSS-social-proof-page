@@ -1,0 +1,225 @@
+/* ========== global ========== */
+
+* {
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+    }
+
+:root {
+    --dark-purple: hsl(300, 43%, 22%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --verified-buyer: hsl(311, 36%, 44%);
+}
+
+body {
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, right bottom;
+    height: 100vh;
+    font-family: 'Spartan', sans-serif;
+    padding: 7%;
+}
+
+
+
+.container-for-header-n-ratings {
+    display: flex;
+    width: 100%;
+
+}
+
+/* ======= HEADER =========== */
+
+header {
+    width: 40%;
+
+}
+
+header h1 {
+    font-weight: 700;
+    color: var(--dark-purple);
+    font-size: 2.7rem;
+}
+
+header p {
+    line-height: 25px;
+   
+    font-weight: 500;
+    color: var(--dark-purple);
+}
+
+/*====== 5 STAR RATING BOXES ======= */
+
+.ratings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    width: 60%;
+    gap: 20px
+}
+
+.first-review, .second-review, .third-review {
+    padding: 15px;
+    background-color: var(--light-grayish-magenta);
+    border-radius: 10px;
+    display: flex;
+    align-self: flex-end; 
+}
+
+.first-review p, .second-review p, .third-review p {
+   align-items: center;
+   display: flex;
+   font-size: 0.8rem;
+   font-weight: 600;
+   color: var(--dark-purple);
+   margin-right: 80px;
+} 
+
+.first-review {
+    position: relative;
+    right: 20%;
+}
+
+.second-review {
+    position: relative;
+    right: 10%;
+}
+
+.stars ul {
+    display: flex;
+   
+    list-style: none;
+    margin: 0 20px;
+}
+
+.stars ul li {
+    margin: 0 3px;
+}
+
+
+/* -------------- third section ---------- */
+
+.purple-cards-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.card-one, .card-two, .card-three {
+    border-radius: 10px;
+    background-color: var(--dark-purple);
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card-two {
+    position: relative;
+    top: 15px;
+}
+
+.card-three {
+    position: relative;
+    top: 30px;
+}
+
+.user-info {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.name {
+    color: var(--light-grayish-magenta);
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.name p:nth-child(2) {
+    color: var(--verified-buyer);
+}
+
+.user-info img {
+    border-radius: 50%;
+    width: 15%;
+}
+
+.user-review {
+    color: white;
+    line-height: 25px;
+    font-size: 0.9rem;
+}
+
+
+/* ======= SIGNATURE ========== */
+
+.attribution { 
+    text-align: center; 
+    color: black;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.attribution p {
+     color: blue; 
+    }
+
+
+/* ======== MEDIA QUERIES ========== */
+
+ @media screen and (max-width: 1050px) {
+    .container-for-header-n-ratings {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    header {
+        width: 90%;
+    }
+    
+    .ratings-container {
+        width: 90%;
+    }
+
+    .first-review {
+        margin-top: 50px;
+    }
+
+    .first-review, .second-review, .third-review {
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        align-self: center;
+    }
+
+    .first-review p, .second-review p, .third-review p {
+        margin-right: 0px;
+        margin-top: 10px;
+    }
+
+    .first-review, .second-review {
+        position: unset;
+    }
+
+    .purple-cards-container {
+        flex-direction: column;
+    }
+
+    .card-one, .card-two, .card-three {
+        padding: 10%;
+    }
+
+    .card-two, .card-three {
+        position: unset;
+    }
+}
+
+
