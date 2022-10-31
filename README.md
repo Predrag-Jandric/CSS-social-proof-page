@@ -1,12 +1,16 @@
-# 🛠 Social proof challenge
+# 🛠 CSS - Social proof
 
 # 🔗 [Live Preview](https://naughty-banach-9527d2.netlify.app/)
 ![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
-Thanks for checking out my one of many practice projects.
+- Medium size project in which I built three separate sections with elements that are asymetrical. Here I practiced position properties, making page responsive and flexbox.
 
-- In this challenge I build a social proof page using some semi-advance properties in CSS, the page is also responsive on all devices.
+- [Frontend Mentor](https://www.frontendmentor.io) is a website that challenges new developers to improve their coding skills by building realistic projects, it provides all the building materials.
 
-[Frontend Mentor](https://www.frontendmentor.io/profile/PeterJan285) is a community that helps programmers improve their coding skills by building realistic projects as challenges.
+### Languages and features 👨‍💻 
+
+- CSS: variables, position properties, flexbox, responsiveness, background properties.
+
+Thanks for checking out my projects.
